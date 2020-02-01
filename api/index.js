@@ -22,5 +22,19 @@ const getBlogPostsAPI = async params => {
       return error;
     }
   };
+
+  const getBlogPostAPI = async slug => {
+    try {
+      const API = await Prismic.api(PRISMIC_API_URL);
+      // we pass up the slug to request the correct post
+      const response = await API.query(
+        Prismic.Predicates.at('my.blog_post.uid', slug)
+      );
+      return response.results[0];
+    } catch (error) {
+      console.error(error);
+      return error;
+    }
+  };
   
-  export { getBlogPostsAPI };
+  export { getBlogPostsAPI, getBlogPostAPI };

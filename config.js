@@ -1,0 +1,1 @@
+export const PRISMIC_API_URL = 'https://lifesustainable.prismic.io/api/v2';

@@ -36,5 +36,28 @@ const getBlogPostsAPI = async params => {
       return error;
     }
   };
+
+  const getHomePage = async params => {
+    try {
+      const API = await Prismic.api(PRISMIC_API_URL);
+      const response = await API.getSingle('homepage');
+      return response;
+    } catch (error) {
+      return error;
+    }
+  };
   
-  export { getBlogPostsAPI, getBlogPostAPI };
+  const getStaticPage = async slug => {
+    try {
+      const API = await Prismic.api(PRISMIC_API_URL);
+      const response = await API.query(
+        Prismic.Predicates.at("my.static_pages.uid", slug)
+      );
+      return response.results[0];
+    } catch (error) {
+      console.error(error);
+      return error;
+    }
+  };
+  
+  export { getBlogPostsAPI, getBlogPostAPI, getHomePage, getStaticPage };

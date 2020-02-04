@@ -7,6 +7,7 @@ import DefaultLayout from '../layouts';
 export default class BlogPost extends Component {
   static async getInitialProps(context) {
     const { slug } = context.query;
+    debugger;
     const response = await getBlogPostAPI(slug);
     return {
       post: response
@@ -18,7 +19,7 @@ export default class BlogPost extends Component {
     return (
       <DefaultLayout>
         <article>
-          <h1>{post.title.length ? post.title[0].text : ''}</h1>
+          <h1>{post.title.length ? page.title[0].text : ''}</h1>
           {RichText.render(post.body, linkResolver)}
         </article>
       </DefaultLayout>

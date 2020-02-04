@@ -1,12 +1,10 @@
 import Link from 'next/link';
 import { getBlogPostsAPI } from '../api';
 import { linkResolver } from '../helpers';
-import Navbar from '../components/Navbar';
 import DefaultLayout from '../layouts';
 
 const Index = ({ posts = [] }) => (
     <DefaultLayout>
-      <Navbar />
       <h2>Recent Blog Posts</h2>
       <ul>
         {posts.map((post, index) => (

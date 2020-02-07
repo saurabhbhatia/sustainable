@@ -2,9 +2,11 @@ import Link from 'next/link';
 import { getBlogPostsAPI } from '../api';
 import { linkResolver } from '../helpers';
 import DefaultLayout from '../layouts';
+import Hero from "../components/Hero";
 
 const Index = ({ posts = [] }) => (
     <DefaultLayout>
+      <Hero />
       <h2>Recent Blog Posts</h2>
       <ul>
         {posts.map((post, index) => (

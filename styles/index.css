@@ -4,3 +4,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
   @apply font-headings;
 }
+.navbar-link {
+  background-image: linear-gradient(#64C5EA, #64C5EA);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.navbar-link:hover {
+  background-size: 100% 3px;
+}

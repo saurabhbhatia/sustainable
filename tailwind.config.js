@@ -119,13 +119,15 @@ module.exports = {
         800: '#97266d',
         900: '#702459',
       },
-      cx: {
-        "grain-yellow": "#f7c759",
-        "beaver": "#9e7f66",
-        "crayola": "#ffb728",
-        "lavender-blush": "#ffe8f2",
-        "pumpkin": "#ff683a" 
-      }
+      ls: {
+        "command-blue": "#127FB5",
+        "med-sky-blue": "#90DAED",
+        "max-blue-green": "#20B8C1",
+        "dark-sky-blue": "#90B4CB",
+        "blue-jeans": "#64C5EA",
+        "ufo-green": "#44CF6C",
+        "inchworm": "#99E15E"
+      },
     },
     spacing: {
       px: '1px',
@@ -159,6 +161,7 @@ module.exports = {
     fontFamily: {
       headings: ['Lora', 'serif'],
       body: ['Merriweather', 'serif'],
+      cookie: ['Cookie', 'cursive']
     },
     fontSize: {
       xs: '0.75rem',

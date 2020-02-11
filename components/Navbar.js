@@ -3,10 +3,13 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav class="flex items-center justify-between flex-wrap bg-white borde-ls-blue-jeans p-6 border-b-4 text-lg">
-      <div class="flex items-center flex-no-shrink text-ls-command-blue mr-6">
-        <span className="font-cookie text-3xl tracking-normal">
-          Life Sustainable
-        </span>
+      <div class="flex items-center flex-no-shrink text-ls-sonic-silver mr-6 font-baskerville text-2xl tracking-normal">
+        <a href="/">
+          <img src="https://img.icons8.com/bubbles/50/000000/deciduous-tree.png" />
+        </a>
+        <Link href="/">
+          <a>Sustainable Life</a>
+        </Link>
       </div>
       <div class="block lg:hidden">
         <button
@@ -35,12 +38,12 @@ export default function Navbar() {
         <div class="lg:flex-grow"></div>
         <div>
           <Link href="/">
-            <a className="text-3xl block mt-4 lg:inline-block lg:mt-0 text-ls-command-blue font-cookie hover:text-ls-dark-sky-blue mr-4 navbar-link">
+            <a className="text-xl block mt-4 lg:inline-block lg:mt-0 text-ls-command-blue font-baskerville hover:text-ls-dark-sky-blue mr-4 navbar-link">
               Home
             </a>
           </Link>
           <Link href="/about">
-            <a className="text-3xl block mt-4 lg:inline-block lg:mt-0 text-ls-command-blue font-cookie hover:text-ls-dark-sky-blue mr-4 navbar-link">
+            <a className="text-xl block mt-4 lg:inline-block lg:mt-0 text-ls-command-blue font-baskerville hover:text-ls-dark-sky-blue mr-4 navbar-link">
               About
             </a>
           </Link>

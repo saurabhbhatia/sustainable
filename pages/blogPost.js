@@ -18,10 +18,10 @@ export default class BlogPost extends Component {
     return (
       <DefaultLayout>
         <article>
-          <h1 className="container text-4xl text-center">
+          <h1 className="container text-4xl text-center font-headings">
             {post.title.length ? post.title[0].text : ''}
           </h1>
-          <div className="container mx-4">
+          <div className="container mx-4 font-body">
             {RichText.render(post.body, linkResolver)}
           </div>
         </article>

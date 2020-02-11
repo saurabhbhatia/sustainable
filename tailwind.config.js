@@ -126,7 +126,8 @@ module.exports = {
         "dark-sky-blue": "#90B4CB",
         "blue-jeans": "#64C5EA",
         "ufo-green": "#44CF6C",
-        "inchworm": "#99E15E"
+        "inchworm": "#99E15E",
+        "sonic-silver": "#757575"
       },
     },
     spacing: {
@@ -161,7 +162,7 @@ module.exports = {
     fontFamily: {
       headings: ['Lora', 'serif'],
       body: ['Merriweather', 'serif'],
-      cookie: ['Cookie', 'cursive']
+      baskerville: ['Libre Baskerville', 'serif']
     },
     fontSize: {
       xs: '0.75rem',

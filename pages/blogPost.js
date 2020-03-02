@@ -8,6 +8,7 @@ export default class BlogPost extends Component {
   static async getInitialProps(context) {
     const { slug } = context.query;
     const response = await getBlogPostAPI(slug);
+    if (!response && ctx.res) ctx.res.statusCode = 404 // Return 404 if on server no article was found
     return {
       post: response
     };
@@ -15,6 +16,9 @@ export default class BlogPost extends Component {
 
   render() {
     const post = this.props.post.data;
+    if (!post) {
+      return <Error statusCode={404} /> // Present adequate 404
+    }
     return (
       <DefaultLayout>
         <article>

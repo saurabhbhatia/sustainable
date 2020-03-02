@@ -160,9 +160,9 @@ module.exports = {
       xl: '1280px',
     },
     fontFamily: {
-      headings: ['Lora', 'serif'],
-      body: ['Merriweather', 'serif'],
-      baskerville: ['Libre Baskerville', 'serif']
+      headings: ['Yeseva One'],
+      body: ['Crimson Text'],
+      caladea: ['Caladea']
     },
     fontSize: {
       xs: '0.75rem',
@@ -224,6 +224,7 @@ module.exports = {
     borderWidth: {
       default: '1px',
       '0': '0',
+      '1': '1px',
       '2': '2px',
       '4': '4px',
       '8': '8px',

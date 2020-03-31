@@ -21,11 +21,12 @@ export default class BlogPost extends Component {
     }
     return (
       <DefaultLayout>
+        {/* <img src={post.coverimage} /> */}
         <article>
-          <h1 className="container text-4xl text-center font-headings">
+          <h1 className="text-5xl text-center font-headings">
             {post.title.length ? post.title[0].text : ''}
           </h1>
-          <div className="container mx-4 font-body">
+          <div id="post-body" className="flex flex-column flex-start mx-16 font-body">
             {RichText.render(post.body, linkResolver)}
           </div>
         </article>

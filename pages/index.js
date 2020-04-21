@@ -11,8 +11,8 @@ const Index = ({ posts = [] }) => (
     <div className="text-center text-4xl pt-8">
       <h2>Recent Blog Posts</h2>
     </div>
-    <div className="container my-12 mx-auto px-4 md:px-12">
-      <div className="flex flex-wrap -mx-1 lg:-mx-4 tiles">
+    <div className="container my-12 mx-auto px-4">
+      <div className="flex flex-wrap -mx-1 lg:-mx-4 tiles sm:w-100">
         {posts.map((post, index) => (
           <PostPreview post={post} key={index} />
         ))}

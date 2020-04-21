@@ -30,6 +30,11 @@ export default class BlogPost extends Component {
             {RichText.render(post.body, linkResolver)}
           </div>
         </article>
+    <style jsx>{`
+      #post-body p {
+        width: 50%;
+      }
+    `}</style>
       </DefaultLayout>
     );
   }

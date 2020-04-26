@@ -1,6 +1,4 @@
-import Link from "next/link";
 import { getBlogPostsAPI } from "../api";
-import { linkResolver } from "../helpers";
 import DefaultLayout from "../layouts";
 import Hero from "../components/Hero";
 import PostPreview from "../components/PostPreview";
@@ -21,11 +19,11 @@ const Index = ({ posts = [] }) => (
   </DefaultLayout>
 );
 
-Index.getInitialProps = async context => {
+Index.getInitialProps = async (context) => {
   // Here we call the API and request 5 documents
   const response = await getBlogPostsAPI({ pageSize: 5 });
   return {
-    posts: response.results
+    posts: response.results,
   };
 };
 

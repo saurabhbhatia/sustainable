@@ -15,7 +15,6 @@ export default class BlogPost extends Component {
 
   render() {
     const post = this.props.post.data;
-    console.log(post);
     if (!post) {
       return <Error statusCode={404} />; // Present adequate 404
     }

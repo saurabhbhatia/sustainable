@@ -15,25 +15,25 @@ export default class BlogPost extends Component {
 
   render() {
     const post = this.props.post.data;
+    console.log(post);
     if (!post) {
       return <Error statusCode={404} />; // Present adequate 404
     }
     return (
       <DefaultLayout>
-        {/* <img src={post.coverimage} /> */}
+        <div className="flex flex-column w-full border-b-1">
+          <img className="w-full" src={post.coverimage.url}></img>
+        </div>
         <article>
-          <h1 className="text-5xl text-center font-headings">
+          <h1 className="text-5xl text-center font-headings border-b">
             {post.title.length ? post.title[0].text : ""}
           </h1>
-          {/* <div id="post-body" className="flex flex-column flex-start mx-16 font-body">
-            {RichText.render(post.body, linkResolver)}
-          </div> */}
+          <div className="flex flex-column flex-start md:mx-2 sm:mx-2 font-body text-xl">
+            <div className="lg:w-1/2 md:w-full sm:w-full inline-block m-0 m-auto text-justify p-8 border-l border-r shadow-xl">
+              {RichText.render(post.body)}
+            </div>
+          </div>
         </article>
-        <style jsx>{`
-          #post-body p {
-            width: 50%;
-          }
-        `}</style>
       </DefaultLayout>
     );
   }

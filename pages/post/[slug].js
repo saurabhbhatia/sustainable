@@ -33,14 +33,17 @@ export default class BlogPost extends Component {
               {RichText.render(post.body)}
             </div>
           </div>
-          {/* <DiscussionEmbed
-            shortname="sustainable-me"
-            config={{
-              url: post.uid,
-              identifier: post.id,
-              title: post.title[0].text,
-            }}
-          /> */}
+          <div className="flex flex-column flex-start">
+            <DiscussionEmbed
+              className="lg:w-1/2 md:w-full sm:w-full inline-block m-0 m-auto text-justify"
+              shortname="sustainablelife-me"
+              config={{
+                url: post.uid,
+                identifier: post.id,
+                title: post.title[0].text,
+              }}
+            />
+          </div>
         </article>
         <style jsx>{`
           .block-img {

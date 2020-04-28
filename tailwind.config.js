@@ -127,7 +127,8 @@ module.exports = {
         "blue-jeans": "#64C5EA",
         "ufo-green": "#44CF6C",
         "inchworm": "#99E15E",
-        "sonic-silver": "#757575"
+        "sonic-silver": "#757575",
+        "peachpuff": "#ffdab9"
       },
     },
     spacing: {

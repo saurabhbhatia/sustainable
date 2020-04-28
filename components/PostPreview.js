@@ -20,7 +20,7 @@ class PostPreview extends Component {
           <div className="flex items-center">
             <img
               className="w-10 h-10 rounded-full mr-4"
-              src="https://picsum.photos/600/400/?random"
+              src="https://res.cloudinary.com/drg9hguhu/image/upload/v1588074865/67662269-27D7-488A-B5AF-7B52956D3028_uwexld.jpg"
               alt="Avatar of Anuja Sethi"
             />
             <div className="text-lg">

@@ -22,7 +22,7 @@ export default class BlogPost extends Component {
     return (
       <DefaultLayout>
         <div className="flex flex-column w-full border-b">
-          <img className="w-full" src={post.coverimage.url}></img>
+          <img className="w-full hero-img" src={post.coverimage.url}></img>
         </div>
         <article>
           <h1 className="text-5xl text-center font-headings">
@@ -50,6 +50,9 @@ export default class BlogPost extends Component {
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
+          }
+          .hero-img {
+            height: intrinsic;
           }
         `}</style>
       </DefaultLayout>

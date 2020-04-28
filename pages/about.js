@@ -28,6 +28,13 @@ export default class About extends Component {
             </div>
           </div>
         </article>
+        <style jsx>{`
+          .block-img img {
+            max-width: 50% !important;
+            height: auto;
+            margin: auto;
+          }
+        `}</style>
       </DefaultLayout>
     );
   }

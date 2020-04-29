@@ -35,12 +35,12 @@ export default function Navbar() {
         <div className="lg:flex-grow"></div>
         <div>
           <Link href="/">
-            <a className="text-xl block mt-4 lg:inline-block lg:mt-0 text-ls-command-blue font-headings hover:text-ls-dark-sky-blue mr-4 navbar-link">
+            <a className="text-xl block mt-4 lg:inline-block lg:mt-0 text-ls-command-blue font-title hover:text-ls-dark-sky-blue mr-4 navbar-link">
               Home
             </a>
           </Link>
           <Link href="/about">
-            <a className="text-xl block mt-4 lg:inline-block lg:mt-0 text-ls-command-blue font-headings hover:text-ls-dark-sky-blue mr-4 navbar-link">
+            <a className="text-xl block mt-4 lg:inline-block lg:mt-0 text-ls-command-blue font-title hover:text-ls-dark-sky-blue mr-4 navbar-link">
               About
             </a>
           </Link>

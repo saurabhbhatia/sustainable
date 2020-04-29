@@ -13,7 +13,7 @@ class PostPreview extends Component {
             src={post.data.previewimage.url}
           />
           <div className="flex items-center leading-tight py-2 md:py-4">
-            <h1 className="text-xl no-underline hover:underline text-black">
+            <h1 className="text-xl font-title font-bold no-underline hover:underline text-black">
               {post.data.title[0].text}
             </h1>
           </div>

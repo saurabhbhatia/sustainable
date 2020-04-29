@@ -163,7 +163,8 @@ module.exports = {
     fontFamily: {
       headings: ['Yeseva One'],
       body: ['Crimson Text'],
-      caladea: ['Caladea']
+      caladea: ['Caladea'],
+      title: ['Lora']
     },
     fontSize: {
       xs: '0.75rem',

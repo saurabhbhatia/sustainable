@@ -17,7 +17,7 @@ export default class DefaultLayout extends Component {
     return (
       <div>
         <Head>
-          <title>Sustainable Life</title>
+          <title>Sustainable Life | A blog about living sustainably as an individual.</title>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"

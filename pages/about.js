@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Head from "next/head";
 import { RichText } from "prismic-reactjs";
 import { getStaticPage } from "../api";
 import DefaultLayout from "../layouts";
@@ -18,6 +19,13 @@ export default class About extends Component {
     }
     return (
       <DefaultLayout>
+        <Head>
+          <title> Sustainable Life | About</title>
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
+          />
+        </Head>
         <article>
           <h1 className="text-5xl text-center font-headings">
             {page.title.length ? page.title[0].text : ""}

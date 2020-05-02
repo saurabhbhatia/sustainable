@@ -6,13 +6,13 @@ import { Component } from "react";
 
 export default class DefaultLayout extends Component {
   componentDidMount () {
-    if (!window.GA_INITIALIZED) {
+    if (!window.GA_INITIALIZED && process.env.NODE_ENV != "development" ) {
       initGA()
       window.GA_INITIALIZED = true
     }
     logPageView()
   }
-  
+
   render() {
     return (
       <div>

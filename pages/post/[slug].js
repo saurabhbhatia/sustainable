@@ -20,7 +20,7 @@ export default class BlogPost extends Component {
     const post = this.props.post.data;
     const shareUrl = "https://sustainablelife.me/post/" + post.uuid;
     const title = post.title.length ? post.title[0].text : "";
-    console.log(post);
+    
     if (!post) {
       return <Error statusCode={404} />; // Present adequate 404
     }

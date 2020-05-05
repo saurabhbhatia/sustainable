@@ -1,6 +1,6 @@
-### Life Sustainable
+### Sustainable Life
 
-This is the code for website and blog for life sustainable.
+This is the code for website and blog for sustainable life.
 
 ### Tech Stack
 
@@ -17,4 +17,4 @@ $ npm run dev
 
 ### Deployment
 
-`master` branch auto-deploys to [Vercel](https://vercel.com/)
+The `master` branch auto-deploys to [Vercel](https://vercel.com/)

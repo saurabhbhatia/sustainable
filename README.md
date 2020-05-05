@@ -4,9 +4,9 @@ This is the code for website and blog for life sustainable.
 
 ### Tech Stack
 
-- Next JS.
-- Prismic Headless CMS.
-- Tailwind CSS
+- [Next JS](https://nextjs.org/)
+- [Prismic Headless CMS](https://prismic.io)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ### Run it locally
 
@@ -17,4 +17,4 @@ $ npm run dev
 
 ### Deployment
 
-Zeit Now
+`master` branch auto-deploys to [Vercel](https://vercel.com/)

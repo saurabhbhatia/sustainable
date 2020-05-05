@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { menuToggle } from "../utils/menu-toggle";
 
 export default function Navbar() {
   return (
@@ -14,6 +15,7 @@ export default function Navbar() {
           aria-label="menu"
           aria-expanded="false"
           data-target="toggleNav"
+          onClick={menuToggle}
         >
           <svg
             className="fill-current h-3 w-3 sm:w-10 sm:h-10"

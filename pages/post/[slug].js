@@ -65,11 +65,6 @@ export default class BlogPost extends Component {
           </div>
         </article>
         <style jsx>{`
-          .block-img {
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-          }
           .hero-img {
             height: intrinsic;
           }

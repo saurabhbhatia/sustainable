@@ -27,9 +27,6 @@ class PostPreview extends Component {
               <p className="text-gray-900 leading-none">
                 <span className="text-bold">Author: </span>Anuja Sethi
               </p>
-              <p className="text-gray-600">
-                <span className="text-bold">Posted: </span>20 Aug 18
-              </p>
             </div>
           </div>
           <br />

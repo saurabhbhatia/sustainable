@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { menuToggle } from "../utils/menu-toggle";
+
+const toggleMenu = (event) => {
+  document.querySelector('#burger').classList.toggle('sm:block')
+  document.querySelector('#toggleNav').classList.toggle('sm:hidden')
+}
 
 export default function Navbar() {
   return (
@@ -14,8 +18,8 @@ export default function Navbar() {
           className="navbar-burger flex items-center px-3 py-2 border rounded text-ls-command-blue border-ls-blue-jeans hover:text-ls-command-blue hover:border-white"
           aria-label="menu"
           aria-expanded="false"
-          data-target="toggleNav"
-          onClick={menuToggle}
+          id="burger"
+          onClick={toggleMenu}
         >
           <svg
             className="fill-current h-3 w-3 sm:w-10 sm:h-10"
